@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: Outfit;
+  color: hsl(215, 51%, 70%);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: hsl(216, 50%, 16%);
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.3rem 1.3rem;
+  width: 15rem;
+}
+
+.mainwrapper {
+  /* border: red 1px solid; */
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  background-image: url(images/image-equilibrium.jpg);
+  background-size: contain;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.equilimg_hover_icon {
+  opacity: 0;
+}
+
+.overlay:hover {
+  background-color: hsl(178, 100%, 50%);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 3%;
+  display: flex;
+  justify-content: center;
+  opacity: 100%;
+  box-shadow: inset 0 0 0 1000px hsl(178, 100%, 50%, .5);
+}
+
+.overlay:hover img {
+  align-self: center;
+  opacity: 100%;
+  width: 2.5rem;
+}
+
+.equillink:hover {
+  background-image: url("/images/icon-view.svg");
+  width: 15rem;
+  /* border: #fff solid 1px; */
+}
+
+.nft_title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+  align-self: flex-start;
+  padding-top: 1.2rem;
+}
+
+.nft_description {
+  font-size: .9rem;
+  font-weight: 300;
+  align-self: flex-start;
+  padding-top: .8rem;
+  width: 100%
+}
+
+.cost_time {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding-top: 1.2rem;
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+.cost_time p {
+  /* border: white solid 1px; */
+  display: flex;
+  align-items: center;
+}
+
+.eth_cost {
+  color: cyan;
+}
+
+.etherlogo {
+  display: inline;
+  /* border: solid white 1px; */
+  width: 8.5px;
+  padding-right: 5px;
+}
+
+.clockicon {
+  display: inline;
+  /* border: solid white 1px; */
+  width: 15px;
+  padding-right: 5px;
+}
+
+.borderline {
+  border: solid 1px hsl(215, 32%, 27%);
+  margin-top: 15px;
+  /* margin-bottom: 15px; */
+}
+
+.bottomwrapper {
+  display: flex;
+  padding-top: 15px;
+  /* border: white 1px solid; */
+}
+
+.bottomwrapper p {
+  font-size: .75rem;
+  align-self: center;
+  padding-left: 15px;
+}
+
+.avatar {
+  border: white solid 1px;
+  border-radius: 50%;
+  width: 1.5rem;
+}
+
+.juleslink {
+  font-size: .75rem;
+}
+
+.attribution {
+  font-weight: 300;
+  padding-top: 1.5rem;
+  font-size: .85rem;
+}
+
+.attribution a {
+  color: #fff;
+}
+
+.attribution a:hover {
+  color: cyan;
+}
+
+@media (max-width: 376px) {
+  .background {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: 18rem;
+    margin-top: .1rem;
+  }
+  .overlay {
+    width: 18rem;
+    background-size: contain;
+    height: 18rem;
+  }
+
+  .equilimg_hover_icon {
+    opacity: 0;
+  }
+  
+  .overlay:hover {
+    background-color: hsl(178, 100%, 50%);
+    width: 18rem;
+    height: 18rem;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    opacity: 100%;
+    box-shadow: inset 0 0 0 1000px hsl(178, 100%, 50%, .5);
+  }
+  
+  .overlay:hover img {
+    align-self: center;
+    opacity: 100%;
+    width: 2.5rem;
+  }
+
+  .nft_title {
+    font-size: 1.5rem;
+  }
+  .nft_description {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .cost_time {
+    font-size: 1rem;
+  }
+  .etherlogo {
+    width: 11px;
+    padding-right: 8px;
+  }
+  .clockicon {
+    width: 18px;
+  }
+  .bottomwrapper p, .bottomwrapper p a {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .avatar {
+    width: 2rem;
+  }
+  .attribution {
+    font-weight: 300;
+    padding-top: 1.5rem;
+    font-size: .8rem;
+  }
+}
